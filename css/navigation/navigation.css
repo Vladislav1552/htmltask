@@ -47,3 +47,12 @@
     margin-left: 2%;
     width: auto;
 }
+.navigation--Burger div{
+    width: 100%;
+    height: auto
+}
+.navigation--Burger div:hover {
+    background: #5F8DBF;
+
+
+}

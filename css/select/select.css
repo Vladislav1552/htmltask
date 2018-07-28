@@ -1,0 +1,69 @@
+.selectForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 90%;
+    height: 49px;
+    margin: 2%;
+}
+
+.selectForm__logo {
+    width: 264px;
+    height: 48px;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(99, 99, 99);
+    font-family: "Open Sans";
+    margin-left: 2%;
+}
+
+.selectForm__priceRange {
+    width: 550px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.selectForm__priceRange span {
+    margin: 2%;
+    font-size: 14px;
+    width: 80px;
+    color: rgb(99, 99, 99);
+    font-family: "Open Sans";
+}
+
+.selectForm__priceRange input {
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(99, 99, 99);
+    font-family: "Open Sans";
+}
+
+.selectForm__priceRange input::-moz-placeholder {
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(99, 99, 99);
+    font-family: "Open Sans";
+}
+
+.selectForm__priceRange input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(99, 99, 99);
+    font-family: "Open Sans";
+}

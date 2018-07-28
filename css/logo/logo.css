@@ -1,0 +1,201 @@
+.logo {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #265C99;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logo__info {
+    height: 75px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.logo__info .basket {
+    display: none;
+}
+
+.logo__menu {
+    display: none;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.logo__menu-item {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.logo__logo {
+    font-size: 24px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.logo__contact {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo__pay {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.logo__search {
+    height: 24px;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(228, 225, 225, 0.5)
+}
+
+.logo__search-lens {
+    height: 24px;
+    width: 20px;
+    background: url(../image/lens.png) no-repeat center left;
+}
+
+.logo__search input {
+    width: 100%;
+    border: #265C99;
+    background-color: #265C99;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.logo__search input::-moz-placeholder {
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+}
+
+.logo__search input::-webkit-input-placeholder {
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+}
+
+.logo__basket {
+    width: 100px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logo__basket span {
+    margin-left: 10%;
+}
+
+.logo__navigation {
+    color: white;
+    width: 100%;
+    height: 35%;
+    background-color: #1e497a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logo__openCatalog {
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    margin: 5%;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo__menu, .logo__info .basket {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .logo__basket {
+        width: 40px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .logo__search {
+        width: 60%;
+    }
+    .logo__pay, .logo__contact, .logo__navigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo__search, .logo__basket:last-child {
+        display: none;
+    }
+    .logo__navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 25px;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .logo__navigation .navigation {
+        display: none !important;
+    }
+    .logo__openCatalog {
+        display: block;
+    }
+}

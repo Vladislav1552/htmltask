@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.testTask {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.testTask__header {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.testTask__goods {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 90%;
+    height: 100%;
+}
+
+.testTask__choice {
+    border-bottom: 1px solid #cfcfcf;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(51, 51, 51);
+    font-family: "Open Sans";
+    font-weight: bold;
+    display: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.testTask__choice span {
+    margin: 5%;
+}
+
+.testTask__switch {
+    margin: 5%;
+}
+
+.basket {
+    width: 19px;
+    height: 17px;
+    border-radius: 2px;
+}
+
+.basket--white {
+    background: url(../image/basket_white.png) center;
+}
+
+.basket--blue {
+    background: url(../image/basket_blue.png);
+    background-size: cover;
+}
+
+.basket--red {
+    background: url(../image/basket_red.png);
+    background-size: cover;
+}
+
+.switch {
+    width: 20px;
+    height: 19px;
+    background: url(../image/controle.png) center;
+}
+
+.lens {
+    width: 12px;
+    height: 15px;
+    border-radius: 4px;
+    background: url(../image/lens.png);
+}
+
+.lens--logo {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .selectForm {
+        display: none !important;
+    }
+    .testTask__choice {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testTask__goods {
+        width: 100%;
+    }
+    .goods {
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .testTask__choice {
+        display: none;
+    }
+    .lens--logo {
+        display: block;
+    }
+}

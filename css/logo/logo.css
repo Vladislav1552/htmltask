@@ -91,10 +91,8 @@
     border-bottom: 1px solid rgba(228, 225, 225, 0.5)
 }
 
-.logo__search-lens {
-    height: 24px;
-    width: 20px;
-    background: url(../image/lens.png) no-repeat center left;
+.logo__search .lens {
+ margin-right: 2%;
 }
 
 .logo__search input {
